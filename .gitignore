@@ -31,3 +31,7 @@ outputs/tables/*.csv
 
 # Logs
 *.log
+
+data/reference/*.xlsx
+
+outputs/tables/*.md
