@@ -1,0 +1,37 @@
+project_name: UK Road Safety Intelligence Platform
+repo_name: uk-road-safety-intelligence
+
+version: v1
+status: planning_complete_setup_started
+
+time_scope:
+  start_year: 2020
+  end_year: 2024
+  include_provisional_2025: false
+
+core_tables:
+  - collisions
+  - vehicles
+  - casualties
+
+project_goal:
+  Build a multi-table road safety intelligence project using official UK DfT STATS19 data
+  to identify severity drivers, hotspot patterns, vulnerable road users, and intervention priorities.
+
+positioning:
+  - data_analyst
+  - data_engineering
+  - decision_support
+  - portfolio_project
+
+storage_strategy:
+  raw_data_committed_to_github: false
+  processed_data_committed_to_github: false
+  exports_committed_selectively: true
+
+initial_outputs:
+  - cleaned_tables
+  - analytical_marts
+  - kpi_tables
+  - charts
+  - business_insights

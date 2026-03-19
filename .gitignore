@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data files
+data/raw/**/*.csv
+data/raw/**/*.zip
+data/raw/**/*.parquet
+data/processed/**/*.csv
+data/processed/**/*.parquet
+
+# Outputs
+outputs/charts/*.png
+outputs/charts/*.jpg
+outputs/charts/*.svg
+outputs/tables/*.csv
+
+# Logs
+*.log
