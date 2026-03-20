@@ -89,7 +89,8 @@ That makes this project useful for decision support, because it separates:
 - data/processed/silver/ -> cleaned analytical tables
 - data/processed/gold/ -> mart outputs
 - outputs/tables/ -> KPI and profile tables
-- eports/ -> business-style finding summaries
+- 
+eports/ -> business-style finding summaries
 - src/ -> pipeline scripts
 
 ## Current Positioning
@@ -109,7 +110,7 @@ This portfolio project is designed to demonstrate:
 
 ## How to Run
 
-### 1) Create and activate the virtual environment
+1) Create and activate the virtual environment
 `powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -121,6 +122,28 @@ python src/clean_collisions.py
 python src/clean_vehicles.py
 python src/clean_casualties.py
 python src/model_sanity_check.py
+
+## Power BI Dashboard Layer
+
+This project also includes a Power BI dashboard layer built on top of Python-generated analytical output tables.
+
+### Dashboard pages
+- **KPI Overview**  
+  High-level metrics and yearly collision vs KSI trend
+
+- **Risk Context Analysis**  
+  Severity-focused visuals across speed limit, road type, and urban-rural context
+
+### Dashboard assets
+See the `dashboard/` folder for:
+- Power BI dashboard file (`.pbix`)
+- dashboard screenshots
+- dashboard notes
+
+### Dashboard purpose
+The dashboard is designed to translate analytical outputs into decision-support oriented visuals rather than static chart exports only.
+
+
 python src/build_mart_collision_risk.py
 python src/build_kpi_collision_overview.py
 python src/build_yearly_severity_trend.py
