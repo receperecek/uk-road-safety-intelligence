@@ -1,1 +1,24 @@
+# Power BI Dashboard Notes
 
+## Pages
+
+### 1. KPI Overview
+This page presents the top-level road safety KPI view for 2020–2024, including:
+- total collisions
+- total casualties
+- total vehicles
+- average casualties per collision
+- weekend collision rate
+
+It also includes a combined yearly trend visual showing total collisions and KSI trend together.
+
+### 2. Risk Context Analysis
+This page focuses on decoded severity context across:
+- speed limit
+- road type
+- urban vs rural classification
+
+The goal is to highlight how severity patterns change depending on operating environment rather than only showing raw collision counts.
+
+## Purpose
+This dashboard layer translates Python-generated analytical outputs into business-facing visuals for decision-support interpretation.
